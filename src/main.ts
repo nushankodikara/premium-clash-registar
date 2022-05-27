@@ -1,20 +1,8 @@
 import App from "./App.svelte";
-
-let uid = 0;
+import { uid } from "./store.js";
 
 function onTelegramAuth(user) {
-    alert(
-        "Logged in as " +
-            user.first_name +
-            " " +
-            user.last_name +
-            " (" +
-            user.id +
-            (user.username ? ", @" + user.username : "") +
-            ")"
-    );
-
-    uid = user.id;
+    uid.update(user.id);
 }
 
 const app = new App({

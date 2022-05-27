@@ -1,11 +1,21 @@
 <script lang="ts">
     import logo from "./assets/svelte.png";
     import Counter from "./lib/Counter.svelte";
+    import { uid } from "./store.js";
+
+    let userID = 0;
+    uid.subscribe((uid) => (userID = uid));
 </script>
 
 <main>
     <img src={logo} alt="Svelte Logo" />
-    <h1>Hello Typescript!</h1>
+    <h1>
+        Hello {#if userID}
+            <span>{userID}</span>
+        {:else}
+            <span>World</span>
+        {/if}!
+    </h1>
 
     <Counter />
 
