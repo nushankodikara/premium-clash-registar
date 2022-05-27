@@ -10,7 +10,11 @@
 <main>
     <img src={logo} alt="Svelte Logo" />
     <h1>
-        Hello {userID}
+        Hello [{#if userID}
+            <span>{userID}</span>
+        {:else}
+            <span>TS</span>
+        {/if}!]
     </h1>
 
     <Counter />

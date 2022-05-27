@@ -2,7 +2,7 @@ import App from "./App.svelte";
 import { uid } from "./store.js";
 
 function onTelegramAuth(user) {
-    uid.update(user.id);
+    uid.set(user.id);
 }
 
 const app = new App({
