@@ -5,15 +5,12 @@
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Premium Clash Subscription</title>
-        <script
-            type="module"
-            crossorigin
-            src="/assets/index.4085e5ad.js"
-        ></script>
-        <link rel="stylesheet" href="/assets/index.d3ee2306.css" />
+      <script type="module" crossorigin src="/assets/index.4085e5ad.js"></script>
+      <link rel="stylesheet" href="/assets/index.d3ee2306.css">
     </head>
     <body>
         <div id="app"></div>
+        
         <center>
             <script
                 async
@@ -23,22 +20,7 @@
                 data-onauth="onTelegramAuth(user)"
                 data-request-access="write"
             ></script>
-            <script>
-                function onTelegramAuth(user) {
-                    alert(
-                        "Logged in as " +
-                            user.first_name +
-                            " " +
-                            user.last_name +
-                            " (" +
-                            user.id +
-                            (user.username ? ", @" + user.username : "") +
-                            ")"
-                    );
-
-                    uid = user.id;
-                }
-            </script>
+            <script></script>
         </center>
     </body>
 </html>
