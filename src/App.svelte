@@ -4,7 +4,7 @@
     import { uid } from "./store.js";
 
     let userID = 0;
-    uid.subscribe((uid) => (userID = uid));
+    uid.subscribe((id) => (userID = id));
 </script>
 
 <main>
@@ -13,7 +13,7 @@
         Hello {#if userID}
             <span>{userID}</span>
         {:else}
-            <span>World</span>
+            <span>TS</span>
         {/if}!
     </h1>
 
