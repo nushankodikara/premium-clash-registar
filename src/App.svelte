@@ -39,8 +39,10 @@
                 <div class="card-body">
                     <iframe
                         width="100%"
+                        height="650px"
                         frameborder="0"
                         src="https://vipclash.speedtestcustom.com"
+                        title="Speed Test"
                     />
                 </div>
             </div>
