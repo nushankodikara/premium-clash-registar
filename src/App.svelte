@@ -37,22 +37,11 @@
                     </h6>
                 </div>
                 <div class="card-body">
-                    <div id="sc-container">
-                        <div id="sc-branding" class="sc-bb">
-                            <a
-                                target="_blank"
-                                href="https://www.speedcheck.org/"
-                            >
-                                <img
-                                    src="https://cdn.speedcheck.org/branding/speedcheck-logo-18.png"
-                                    alt="Speedcheck"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                    <script
-                        src="https://cdn.speedcheck.org/basic/scbjs.min.js"
-                        async></script>
+                    <iframe
+                        width="100%"
+                        frameborder="0"
+                        src="https://vipclash.speedtestcustom.com"
+                    />
                 </div>
             </div>
         {:else}
