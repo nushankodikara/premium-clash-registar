@@ -20,7 +20,14 @@
                 <div class="card-body">
                     You can use this page to manage your clash configuration.
                     But first let's do a speed test to identify your internet
-                    speed.
+                    speed.<br /><br />Please Notice: These configurations cannot
+                    speed up your internet connection if you don't have enough
+                    coverage or if your area is crowded. Please check with your
+                    carrier before buying a plan.<br /><br />You can only use
+                    these configurations to unlock carrier based website locks (
+                    for an example if you bought a facebook package you will
+                    only be able to use it for facebook. When using this
+                    configuration that limitation will get removed. )
                 </div>
             </div>
             <div class="card shadow mb-4 col-md-6">
