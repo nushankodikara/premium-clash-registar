@@ -1,11 +1,12 @@
 <script lang="ts">
+    import { writable } from "svelte/store";
+
     import logo from "./assets/svelte.png";
     import Counter from "./lib/Counter.svelte";
     import { uid } from "./store.js";
-    import { onTelegramAuth } from "./loginButton.js";
 
-    let userID = 0;
-    uid.subscribe((id) => (userID = id));
+    let userID = writable(0);
+    uid.subscribe((val) => (userID = uid));
 </script>
 
 <main>
@@ -14,7 +15,7 @@
         Hello {#if userID}
             <span>{userID}</span>
         {:else}
-            <span>TS</span>
+            <span>World</span>
         {/if}!
     </h1>
 
@@ -29,16 +30,6 @@
         Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a>
         for the officially supported framework, also powered by Vite!
     </p>
-
-    <center>
-        <script
-            async
-            src="https://telegram.org/js/telegram-widget.js?19"
-            data-telegram-login="nk_premium_clash_bot"
-            data-size="large"
-            data-onauth={onTelegramAuth}
-            data-request-access="write"></script>
-    </center>
 </main>
 
 <style>
