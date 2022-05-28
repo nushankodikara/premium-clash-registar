@@ -11,9 +11,10 @@ function getCookie(name) {
 }
 
 // check if the cookie exists
-if (cookies.includes("telegram_user_id")) {
-    console.log("cookie exists");
+try {
     uid.set(parseInt(getCookie("telegram_user_id")));
+} catch (e) {
+    console.log("Cookie not found");
 }
 
 const app = new App({
