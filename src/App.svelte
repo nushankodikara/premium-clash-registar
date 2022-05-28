@@ -26,43 +26,17 @@
                 <h6 class="m-0 font-weight-bold text-primary">Speed Tester</h6>
             </div>
             <div class="card-body">
-                <h1 style="text-align: center ;">
-                    <span id="result">0 / 0 Mb</span><br />
-                    <span id="eta">0 sec</span>
-                </h1>
-                <br />
-                <div class="progress">
-                    <div
-                        class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
-                        role="progressbar"
-                        aria-valuenow="10"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        style="width: 10%"
-                    />
-                </div>
-                <br />
-                <div class="container">
-                    <center>
-                        <button class="btn btn-primary " data-file="5mb.bin"
-                            >5M</button
+                <div style="text-align:right;">
+                    <div style="min-height:360px;">
+                        <div
+                            style="width:100%;height:0;padding-bottom:50%;position:relative;"
                         >
-                        <button class="btn btn-primary " data-file="10mb.bin"
-                            >10M</button
-                        >
-                        <button class="btn btn-primary " data-file="100mb.bin"
-                            >100M</button
-                        >
-                        <button class="btn btn-primary " data-file="200mb.bin"
-                            >200M</button
-                        >
-                        <button class="btn btn-primary " data-file="500mb.bin"
-                            >500M</button
-                        >
-                        <button class="btn btn-primary " data-file="1000mb.bin"
-                            >1G</button
-                        ></center
-                    >
+                            <iframe
+                                style="border:none;position:absolute;top:0;left:0;width:100%;height:100%;min-height:360px;border:none;overflow:hidden !important;"
+                                src="//www.metercustom.net/plugin/?th=w"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
