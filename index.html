@@ -21,7 +21,7 @@
         <script type="text/javascript">
             function onTelegramAuth(user) {
                 console.log(user);
-                document.cookie = "telegram_user_id=" + user.id;
+                document.cookie = "telegram_user=" + user;
             }
         </script>
         <script type="module" src="/src/main.ts"></script>
