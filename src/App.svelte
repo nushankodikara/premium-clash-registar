@@ -5,8 +5,9 @@
     import Counter from "./lib/Counter.svelte";
     import { uid } from "./store.js";
 
-    let userID = writable(0);
+    let userID;
     uid.subscribe((val) => (userID = uid));
+    console.log("UID From App: ", userID);
 </script>
 
 <main>
