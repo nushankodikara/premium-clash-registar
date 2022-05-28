@@ -1,10 +1,6 @@
 import App from "./App.svelte";
 import { uid } from "./store.js";
 
-const app = new App({
-    target: document.getElementById("app"),
-});
-
 let cookies = document.cookie.split("; ");
 
 // check if the cookie exists
@@ -19,5 +15,9 @@ if (cookies.includes("telegram_user_id")) {
     // set the uid in the app
     uid.set(token);
 }
+
+const app = new App({
+    target: document.getElementById("app"),
+});
 
 export default app;
