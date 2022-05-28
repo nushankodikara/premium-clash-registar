@@ -11,7 +11,7 @@
 <div class="container">
     <div class="row">
         {#if userID}
-            <div class="card shadow mb-4 col">
+            <div class="card shadow mb-4 col-md-6">
                 <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-primary">
                         Welcome {userID}
@@ -23,7 +23,7 @@
                     speed.
                 </div>
             </div>
-            <div class="card shadow mb-4 col-6">
+            <div class="card shadow mb-4 col-md-6">
                 <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-primary">
                         Speed Tester
@@ -46,7 +46,7 @@
                 </div>
             </div>
         {:else}
-            <div class="card shadow mb-4 col-6">
+            <div class="card shadow mb-4 col-md-6">
                 <div class="card-header py-3">
                     <h6 class="m-0 font-weight-bold text-primary">
                         Hello There!
