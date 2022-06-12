@@ -9,6 +9,12 @@
         userID = value;
     });
     console.log("UID From App: ", userID);
+
+    fetch(
+        "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Bourbon"
+    ).then((response) => {
+        console.log(response);
+    });
 </script>
 
 <div class="container">
