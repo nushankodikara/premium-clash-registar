@@ -1,8 +1,5 @@
 <script lang="ts">
     import { uid } from "./store.js";
-    import { testFunction } from "./firebase.js";
-
-    testFunction();
 
     let userID;
     uid.subscribe((value) => {
